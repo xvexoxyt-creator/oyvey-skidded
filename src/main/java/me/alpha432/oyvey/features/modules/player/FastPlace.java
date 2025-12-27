@@ -13,6 +13,7 @@ public class FastPlace extends Module {
         if (nullCheck()) return;
 
         if (mc.player.isHolding(Items.EXPERIENCE_BOTTLE)) {
+            mc.player.connection.send(pakcet);
             mc.rightClickDelay = 0;
         }
     }
